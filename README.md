@@ -92,8 +92,8 @@ Detailed study material and trade-off analyses aligned with the official exam do
 ### Quick Start
 1. Clone this repository:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/aws-cloud-practitioner-portfolio.git
-   cd aws-cloud-practitioner-portfolio
+   git clone https://github.com/jolucoga/aws-cloud-practitioner-lab.git
+   cd aws-cloud-practitioner-lab
    ```
 2. Navigate to any lab directory (e.g., Lab 01):
    ```bash
@@ -110,7 +110,7 @@ Detailed study material and trade-off analyses aligned with the official exam do
 
 ## 👤 Author & Contact
 
-**Your Name**
+**Luis Corona**
 * **LinkedIn:** [linkedin.com/in/joseluiscorona](https://linkedin.com/in/joseluiscorona)
 * **GitHub:** [@jolucoga](https://github.com/jolucoga)
 * **AWS Certification Status:** *In Progress*
