@@ -111,9 +111,9 @@ Detailed study material and trade-off analyses aligned with the official exam do
 ## 👤 Author & Contact
 
 **Your Name**
-* **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/joseluiscorona)
-* **GitHub:** [@your-username](https://github.com/jolucoga)
-* **AWS Certification Status:** *In Progress / Certified (Date)*
+* **LinkedIn:** [linkedin.com/in/joseluiscorona](https://linkedin.com/in/joseluiscorona)
+* **GitHub:** [@jolucoga](https://github.com/jolucoga)
+* **AWS Certification Status:** *In Progress*
 
 ---
 ## 📄 License
