@@ -12,13 +12,14 @@ Instead of buying, owning, and maintaining physical data centers and servers, yo
 
 ### The 6 Advantages of Cloud Computing
 
-| **Advantage** | **Description** | **Business Impact** | 
-| **Trade fixed expense for variable expense** | Replace upfront capital expenditure (CapEx) with operational expenditure (OpEx). | Pay only for what you consume; no massive initial investments. | 
-| **Benefit from massive economies of scale** | AWS aggregates usage across hundreds of thousands of customers. | Lower pay-as-you-go prices than individual companies can achieve. | 
-| **Stop guessing capacity** | Eliminate guesswork on infrastructure capacity needs. | Scale up or down automatically based on demand; no idle resources. | 
-| **Increase speed and agility** | IT resources are available in minutes with a few clicks. | Reduces time-to-market for applications from weeks to minutes. | 
-| **Stop spending money running and maintaining data centers** | Focus on projects that differentiate your business rather than infrastructure. | Engineering teams focus on application logic, not racking and stacking hardware. | 
-| **Go global in minutes** | Deploy applications in multiple AWS Regions around the world easily. | Provide lower latency and a better experience for global users at minimal cost. | 
+| Advantage | Description | Business Impact |
+| :--- | :--- | :--- |
+| **Trade fixed expense for variable expense** | Replace upfront capital expenditure (CapEx) with operational expenditure (OpEx). | Pay only for what you consume; no massive initial investments. |
+| **Benefit from massive economies of scale** | AWS aggregates usage across hundreds of thousands of customers. | Lower pay-as-you-go prices than individual companies can achieve. |
+| **Stop guessing capacity** | Eliminate guesswork on infrastructure capacity needs. | Scale up or down automatically based on demand; no idle resources. |
+| **Increase speed and agility** | IT resources are available in minutes with a few clicks. | Reduces time-to-market for applications from weeks to minutes. |
+| **Stop spending money running and maintaining data centers** | Focus on projects that differentiate your business rather than infrastructure. | Engineering teams focus on application logic, not racking and stacking hardware. |
+| **Go global in minutes** | Deploy applications in multiple AWS Regions around the world easily. | Provide lower latency and a better experience for global users at minimal cost. |
 
 ## 2. Financial & Economics Comparison: CapEx vs. OpEx
 
