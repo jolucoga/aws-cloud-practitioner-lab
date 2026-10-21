@@ -1,120 +1,87 @@
-# ☁️ AWS Cloud Practitioner (CLF-C02) — Applied Portfolio & Architecture Labs
+# ☁️ AWS Certified Cloud Practitioner (CLF-C02) - Mastery & Portfolio
 
-[![AWS Certified Cloud Practitioner](https://img.shields.io/badge/AWS-Cloud%20Practitioner-orange?style=for-the-badge&logo=amazon-aws)](https://aws.amazon.com/certification/certified-cloud-practitioner/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![IaC: Terraform / AWS CLI](https://img.shields.io/badge/IaC-AWS%20CLI%20%7C%20Terraform-blue?style=for-the-badge&logo=terraform)](https://www.terraform.io/)
+![AWS Cloud Practitioner](https://img.shields.io/badge/AWS-Certified%20Cloud%20Practitioner%20(CLF--C02)-orange?style=for-the-badge&logo=amazon-aws)
+![Status](https://img.shields.io/badge/Status-Active%20Portfolio-success?style=for-the-badge)
+![Infrastructure](https://img.shields.io/badge/IaC-AWS%20CLI%20%2F%20Bash-blue?style=for-the-badge&logo=gnu-bash)
 
-Welcome to my **AWS Cloud Practitioner Portfolio Repository**. This repository bridges theoretical knowledge from the [AWS Certified Cloud Practitioner (CLF-C02)](https://www.udemy.com/course/certified-cloud-practitioner-aws/) certification with **real-world implementation**, focusing on infrastructure design, security best practices, cost optimization, and hands-on labs.
+## 🎯 Executive Overview
 
----
-
-## 🎯 Executive Summary & Objectives
-
-The goal of this repository is to demonstrate practical competency in cloud computing using the **AWS Well-Architected Framework**. Rather than just taking notes, each section provides:
-* **Architecture Diagrams** built with official AWS icon sets.
-* **Hands-on Implementation Labs** using AWS CLI, CloudFormation, and Terraform.
-* **Security & Governance Models** adhering to the *Principle of Least Privilege*.
-* **Cost Optimization Strategies** analyzing real-world pricing models.
+This repository serves as a professional portfolio and comprehensive study guide for the **AWS Certified Cloud Practitioner (CLF-C02)** certification. It combines rigorous theoretical documentation—aligned with enterprise architecture standards and the AWS Well-Architected Framework—with automated, production-grade practical labs executed via the **AWS CLI**.
 
 ---
 
 ## 📂 Repository Structure
 
-```text
-aws-cloud-practitioner-portfolio/
-├── README.md                      # Primary project overview and portfolio guide
-├── docs/                          # Core Domain Guides (CLF-C02 Syllabus)
-│   ├── 01-cloud-concepts.md       # Value proposition, elasticity, economics
-│   ├── 02-security-compliance.md  # Shared Responsibility, IAM, KMS, Shield
-│   ├── 03-cloud-technology.md     # Compute, Storage, Networking, Databases
-│   └── 04-billing-pricing.md      # AWS Budgets, Cost Explorer, Organizations
-├── architecture-diagrams/         # Visual representations & design patterns
-│   ├── 01-vpc-isolation.png
-│   └── 02-serverless-web-app.png
-├── labs-and-iac/                  # Hands-on labs and Infrastructure as Code
-│   ├── lab-01-vpc-and-ec2/        # Custom VPC, public/private subnets, IGW
-│   ├── lab-02-s3-cloudfront-cdn/  # Static web hosting with OAC security
-│   ├── lab-03-iam-least-privilege/# Granular IAM roles and policy creation
-│   └── lab-04-cost-budgeting/     # Automated budget alerts and CloudWatch
-└── scripts/                       # Automation and helper tools
-    └── aws-inventory-audit.sh     # Script to list active resources across regions
+```
+aws-cloud-practitioner/
+├── README.md                                     # Project portfolio overview
+├── docs/                                         # Theoretical Curriculum (CLF-C02 Domains)
+│   ├── 01-cloud-concepts/                        # Domain 1: Cloud Concepts & Fundamentals
+│   ├── 02-security-and-compliance/               # Domain 2: Security, IAM & Compliance
+│   ├── 03-cloud-technology-services/             # Domain 3: Compute, Storage, Networking & Databases
+│   └── 04-billing-pricing-and-support/           # Domain 4: Pricing Models, Billing & Support
+└── labs-and-iac/                                 # Practical Infrastructure as Code (IaC)
+    ├── 01-vpc-and-ec2/                           # Lab 01: Custom VPC, Subnets, IGW & Apache Web Server
+    └── 02-s3-iam-and-security/                   # Lab 02: Secure S3 Buckets, Lifecycle & IAM Policies [Active]
 ```
 
 ---
 
-## 🧪 Hands-On Labs Matrix
+## 📚 Theoretical Documentation (CLF-C02 Domains)
 
-| Lab | AWS Services | Core Architectural Concept | Deployment Method |
-| :--- | :--- | :--- | :--- |
-| **[Lab 01](./labs-and-iac/lab-01-vpc-and-ec2/)** | VPC, EC2, IGW, Security Groups | Network isolation, subnets, and secure access | AWS CLI / Terraform |
-| **[Lab 02](./labs-and-iac/lab-02-s3-cloudfront-cdn/)** | S3, CloudFront, Route 53 | High-availability static hosting & edge delivery | CloudFormation |
-| **[Lab 03](./labs-and-iac/lab-03-iam-least-privilege/)** | IAM Roles, Policies, STS | Zero-Trust & Least-Privilege access control | JSON Policy / CLI |
-| **[Lab 04](./labs-and-iac/lab-04-cost-budgeting/)** | AWS Budgets, CloudWatch, SNS | Cost anomaly detection and proactive alerts | AWS Console / CLI |
+All core domains required for the official certification exam are fully documented inside the `docs/` directory:
 
----
-
-## 🏛️ Key Architectural Patterns Included
-
-### 1. High-Availability Multi-AZ Web Architecture
-Demonstrates fault tolerance using an Application Load Balancer (ALB) across multiple Availability Zones with Auto Scaling groups.
-
-```text
-[ Internet ] ──> [ ALB ] ──┬──> [ Public Subnet AZ-A (EC2) ]
-                            └──> [ Public Subnet AZ-B (EC2) ]
-                                            │
-                                            ▼
-                               [ Private Subnet (RDS Multi-AZ) ]
-```
-
-### 2. Secure Content Delivery (S3 + CloudFront OAC)
-Ensures Amazon S3 buckets remain completely private while delivering global static content through Amazon CloudFront edge locations using Origin Access Control (OAC).
+| Domain | Focus Area | Key Covered Topics |
+|---|---|---|
+| **Domain 1** | Cloud Concepts | Cloud value proposition, Economies of scale, Global infrastructure (Regions, AZs, Edge), 6 Rs of migration. |
+| **Domain 2** | Security & Compliance | Shared Responsibility Model, IAM (Users, Groups, Roles, JSON Policies, MFA), WAF, Shield, KMS, CloudTrail, GuardDuty. |
+| **Domain 3** | Technology Services | EC2 purchasing options, Lambda, ECS/EKS, S3 storage classes, EBS vs EFS, RDS, Aurora, DynamoDB, VPC networking. |
+| **Domain 4** | Billing & Support | Pricing models, Ingress vs Egress data transfer, Cost Explorer, AWS Budgets, Organizations, Support Plans, Trusted Advisor. |
 
 ---
 
-## 📚 Exam Domain Breakdown & Notes
+## 🛠️ Practical Labs & Infrastructure as Code (IaC)
 
-Detailed study material and trade-off analyses aligned with the official exam domains:
+Rather than relying solely on the AWS Management Console, this project emphasizes automated, repeatable deployments using Bash and AWS CLI.
 
-1. **[Domain 1: Cloud Concepts](./docs/01-cloud-concepts.md)** — Cloud economics, trade-offs (CapEx vs. OpEx), and the 6 Pillars of the Well-Architected Framework.
-2. **[Domain 2: Security & Compliance](./docs/02-security-compliance.md)** — AWS Shared Responsibility Model, compliance resources (AWS Artifact), and identity management.
-3. **[Domain 3: Cloud Technology & Services](./docs/03-cloud-technology.md)** — Compute (EC2, ECS, Lambda), Storage (S3, EBS, EFS), Databases (RDS, DynamoDB), and Networking (VPC, Route 53).
-4. **[Domain 4: Billing, Pricing & Support](./docs/04-billing-pricing.md)** — Pricing calculators, Savings Plans vs. Reserved Instances, Support Plans, and AWS Organizations.
+### Lab 01: Custom VPC & Amazon EC2 Deployment
+
+**Location:** `labs-and-iac/01-vpc-and-ec2/`
+
+- **Architecture:** Custom VPC (10.0.0.0/16), Internet Gateway, Public Subnet, Custom Route Table, and a Security Group allowing SSH (22) and HTTP (80).
+- **Compute:** Launches an Amazon Linux 2023 EC2 instance with an automated user-data script installing and configuring an Apache web server.
+- **Execution:** Automated via `deploy.sh`.
+
+### Lab 02: Secure Object Storage & IAM Governance
+
+**Location:** `labs-and-iac/02-s3-iam-and-security/`
+
+- **Architecture:** Provisioning of an encrypted Amazon S3 bucket with strict Public Access Blocks and automated Lifecycle Transition Rules (S3 Standard to Glacier).
+- **Security:** Enforces the Principle of Least Privilege via dedicated IAM Groups and custom JSON access policies.
 
 ---
 
-## 🚀 How to Replicate these Labs
+## 🚀 Getting Started & Execution
 
 ### Prerequisites
-* An active **AWS Account** (Free Tier eligible).
-* [AWS CLI v2 installed and configured](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
-* Git installed on your local machine.
 
-### Quick Start
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/jolucoga/aws-cloud-practitioner-lab.git
-   cd aws-cloud-practitioner-lab
-   ```
-2. Navigate to any lab directory (e.g., Lab 01):
-   ```bash
-   cd labs-and-iac/lab-01-vpc-and-ec2
-   ```
-3. Follow the `README.md` inside the specific lab folder for step-by-step deployment instructions.
+- AWS CLI installed and configured with appropriate administrative credentials (`aws configure`).
+- Bash environment (Linux, macOS, or WSL on Windows).
+
+### Running Lab 01
+
+```bash
+cd labs-and-iac/01-vpc-and-ec2/
+chmod +x deploy.sh
+./deploy.sh
+```
 
 ---
 
-## 🔒 Security Disclaimer
-> ⚠️ **Important:** Never commit sensitive credentials (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `.env` files) to version control. This repository utilizes `.gitignore` and `git-secrets` to prevent credential exposure.
+## 💡 Core Architectural Principles
 
----
+- **Principle of Least Privilege (PoLP):** Strict access control policies assigned via IAM roles and groups.
+- **Cost Optimization:** Strategic use of EC2 pricing models (Spot/Reserved) and S3 lifecycle storage classes.
+- **High Availability & Fault Tolerance:** Multi-AZ design patterns and automated backup architectures.
 
-## 👤 Author & Contact
-
-**Luis Corona**
-* **LinkedIn:** [linkedin.com/in/joseluiscorona](https://linkedin.com/in/joseluiscorona)
-* **GitHub:** [@jolucoga](https://github.com/jolucoga)
-* **AWS Certification Status:** *In Progress*
-
----
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Developed as part of an advanced cloud engineering and AWS certification mastery path.
