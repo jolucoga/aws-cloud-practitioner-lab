@@ -1,0 +1,14 @@
+# Lab state written by deploy.sh (contains resource IDs)
+.lab01-state
+
+# Secrets and local configuration
+*.pem
+*.key
+.env
+.aws/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
